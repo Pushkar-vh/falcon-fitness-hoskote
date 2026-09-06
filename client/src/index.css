@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -27,151 +28,70 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
+  --color-chart-1: var(--color-blue-300);
+  --color-chart-2: var(--color-blue-500);
+  --color-chart-3: var(--color-orange-500);
+  --color-chart-4: var(--color-orange-600);
+  --color-chart-5: var(--color-blue-700);
+  --color-sidebar: var(--card);
+  --color-sidebar-foreground: var(--foreground);
+  --color-sidebar-primary: var(--primary);
+  --color-sidebar-primary-foreground: var(--primary-foreground);
+  --color-sidebar-accent: var(--accent);
+  --color-sidebar-accent-foreground: var(--accent-foreground);
+  --color-sidebar-border: var(--border);
+  --color-sidebar-ring: var(--ring);
 }
 
 :root {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-600);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
   --radius: 0.65rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.235 0.015 65);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.235 0.015 65);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.235 0.015 65);
-  --secondary: oklch(0.98 0.001 286.375);
-  --secondary-foreground: oklch(0.4 0.015 65);
-  --muted: oklch(0.967 0.001 286.375);
-  --muted-foreground: oklch(0.552 0.016 285.938);
-  --accent: oklch(0.967 0.001 286.375);
-  --accent-foreground: oklch(0.141 0.005 285.823);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.92 0.004 286.32);
-  --input: oklch(0.92 0.004 286.32);
-  --ring: oklch(0.623 0.214 259.815);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.235 0.015 65);
-  --sidebar-accent: oklch(0.967 0.001 286.375);
-  --sidebar-accent-foreground: oklch(0.141 0.005 285.823);
-  --sidebar-border: oklch(0.92 0.004 286.32);
-  --sidebar-ring: oklch(0.623 0.214 259.815);
+  --background: #101113;
+  --foreground: #f5f6f8;
+  --card: #17191d;
+  --card-foreground: #f5f6f8;
+  --popover: #17191d;
+  --popover-foreground: #f5f6f8;
+  --primary: #2563eb;
+  --primary-foreground: #ffffff;
+  --secondary: #1b1e24;
+  --secondary-foreground: #f5f6f8;
+  --muted: #22252b;
+  --muted-foreground: #9298a6;
+  --accent: #f97316;
+  --accent-foreground: #101113;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: rgba(255,255,255,.1);
+  --input: rgba(255,255,255,.12);
+  --ring: #2563eb;
 }
 
-.dark {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-500);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --background: oklch(0.141 0.005 285.823);
-  --foreground: oklch(0.85 0.005 65);
-  --card: oklch(0.21 0.006 285.885);
-  --card-foreground: oklch(0.85 0.005 65);
-  --popover: oklch(0.21 0.006 285.885);
-  --popover-foreground: oklch(0.85 0.005 65);
-  --secondary: oklch(0.24 0.006 286.033);
-  --secondary-foreground: oklch(0.7 0.005 65);
-  --muted: oklch(0.274 0.006 286.033);
-  --muted-foreground: oklch(0.705 0.015 286.067);
-  --accent: oklch(0.274 0.006 286.033);
-  --accent-foreground:  oklch(0.92 0.005 65);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.488 0.243 264.376);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --sidebar: oklch(0.21 0.006 285.885);
-  --sidebar-foreground: oklch(0.85 0.005 65);
-  --sidebar-accent: oklch(0.274 0.006 286.033);
-  --sidebar-accent-foreground:  oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.488 0.243 264.376);
-}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; background: #101113; }
+body { @apply bg-background text-foreground; margin: 0; font-family: 'DM Sans', sans-serif; }
+button, input, select { font: inherit; }
+button:not(:disabled), a[href], select:not(:disabled), input:not(:disabled) { cursor: pointer; }
+::selection { background: #2563eb; color: #fff; }
 
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-  button:not(:disabled),
-  [role="button"]:not([aria-disabled="true"]),
-  [type="button"]:not(:disabled),
-  [type="submit"]:not(:disabled),
-  [type="reset"]:not(:disabled),
-  a[href],
-  select:not(:disabled),
-  input[type="checkbox"]:not(:disabled),
-  input[type="radio"]:not(:disabled) {
-    @apply cursor-pointer;
-  }
-}
-
-@layer components {
-  /**
-   * Custom container utility that centers content and adds responsive padding.
-   *
-   * This overrides Tailwind's default container behavior to:
-   * - Auto-center content (mx-auto)
-   * - Add responsive horizontal padding
-   * - Set max-width for large screens
-   *
-   * Usage: <div className="container">...</div>
-   *
-   * For custom widths, use max-w-* utilities directly:
-   * <div className="max-w-6xl mx-auto px-4">...</div>
-   */
-  .container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1rem; /* 16px - mobile padding */
-    padding-right: 1rem;
-  }
-
-  .flex {
-    min-height: 0;
-    min-width: 0;
-  }
-
-  @media (min-width: 640px) {
-    .container {
-      padding-left: 1.5rem; /* 24px - tablet padding */
-      padding-right: 1.5rem;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .container {
-      padding-left: 2rem; /* 32px - desktop padding */
-      padding-right: 2rem;
-      max-width: 1280px; /* Standard content width */
-    }
-  }
-}
+.font-display { font-family: 'Barlow Condensed', Impact, sans-serif; }
+.nav-link { color: rgba(255,255,255,.54); font-size: 11px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; transition: color .2s ease; }
+.nav-link:hover { color: #fff; }
+.eyebrow { display: inline-flex; align-items: center; gap: 10px; color: #2563eb; font-size: 10px; font-weight: 900; letter-spacing: .22em; line-height: 1; text-transform: uppercase; }
+.eyebrow span { display: inline-block; height: 1px; width: 30px; background: currentColor; }
+.contact-line { display: flex; align-items: center; gap: 14px; color: rgba(255,255,255,.78); transition: color .2s ease; }
+.contact-line:hover { color: #fff; }
+.contact-line > span:not(.contact-icon) { display: flex; flex-direction: column; gap: 3px; }
+.contact-line b { font-size: 13px; }
+.contact-line small { color: rgba(255,255,255,.42); font-size: 11px; line-height: 1.5; }
+.contact-icon { display: grid; height: 38px; width: 38px; flex: 0 0 auto; place-items: center; color: #fff; }
+.social-icon { display: grid; height: 34px; width: 34px; place-items: center; border: 1px solid rgba(255,255,255,.14); color: rgba(255,255,255,.65); transition: all .2s ease; }
+.social-icon:hover { border-color: #2563eb; background: #2563eb; color: #fff; }
+.modal-input { width: 100%; border: 1px solid rgba(255,255,255,.14); background: #101113; padding: 14px 15px; color: #fff; outline: none; transition: border .2s ease; }
+.modal-input::placeholder { color: rgba(255,255,255,.28); }
+.modal-input:focus { border-color: #2563eb; }
+.modal-input option { background: #17191d; color: #fff; }
+.reveal { opacity: 0; transform: translateY(18px); animation: reveal .8s cubic-bezier(.23,1,.32,1) forwards; }
+.delay-1 { animation-delay: .1s; } .delay-2 { animation-delay: .18s; } .delay-3 { animation-delay: .26s; } .delay-4 { animation-delay: .34s; }
+@keyframes reveal { to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+@media (max-width: 639px) { .contact-line small { font-size: 10px; } }
